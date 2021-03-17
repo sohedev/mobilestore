@@ -1,0 +1,48 @@
+.product__list {
+  /* margin-top: 3rem; */
+  background-image: linear-gradient(to right bottom, white, #f2f2f2);
+  background-size: cover;
+}
+
+.MuiButton-root {
+  color: white !important;
+  background-color: #ffd700 !important;
+  border-color: none !important;
+  border-radius: 4rem !important;
+  padding: 1rem !important;
+  margin: 1rem !important;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.15) !important;
+}
+
+.product__buttons {
+  display: flex !important;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 98%;
+  margin: 0.5rem auto;
+  transition: all 1s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  /* .product__buttons {
+    display: block;
+    position: relative;
+  } */
+
+  .MuiTypography-h5 {
+    font-size: 0.7rem !important;
+  }
+
+  .MuiTypography-h3 {
+    font-size: 2rem !important;
+  }
+  .MuiButton-root {
+    color: white !important;
+    font-size: 0.6rem !important;
+    background-color: #ffd700 !important;
+    padding: 0.7rem !important;
+    margin: 1rem !important;
+  }
+}
+

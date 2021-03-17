@@ -1,0 +1,201 @@
+.payment__container {
+  background-image: linear-gradient(to right bottom, white, #f2f2f2);
+  background-size: cover;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment__subtotal {
+  border-color: none;
+  width: 25rem;
+  background-color: var(--mainYellow);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.3rem;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease-in-out;
+}
+
+.payment__subtotal:hover {
+  box-shadow: 1px 6px 12px rgba(87, 87, 87, 0.4);
+  transform: scale(1.01);
+}
+
+.payment__container > form {
+  display: flex;
+  width: 70%;
+
+  margin-top: 1rem;
+  flex-direction: column;
+  align-items: initial;
+}
+
+.payment__alerts {
+  width: 70%;
+  background-color: #eb4c3d;
+  color: white;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  /* opacity: 0.7; */
+  margin: -0.45rem auto;
+}
+
+.payment__label {
+  font-size: 1.4rem;
+  width: 70%;
+  margin-bottom: 0.1rem;
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.payment__input {
+  border: solid 0.5px #152238;
+  width: 70%;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  outline: none;
+  box-shadow: inset 0px 1px 8px #16d0ff2f;
+  /* background-color: rgba(240, 240, 240, 0.3); */
+  margin: 0.5rem auto;
+  transition: all 0.5s;
+}
+
+.payment__pay {
+  margin-top: 1rem;
+  border: 0.3px solid #15223833;
+  border-radius: 1rem;
+  background-color: #16d0ff10;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 0.5rem 0.02rem;
+}
+
+.button {
+  width: 6rem !important;
+  box-shadow: inset 0px 1px 8px #16d0ffad;
+  border-radius: 999rem !important;
+  margin: 2rem auto;
+  padding: 0.7rem;
+  border-color: 0.5rem var(--lightBlue) !important;
+  color: var(--lightBlue);
+  font-weight: 400;
+  background-color: var(--mainBlue);
+}
+
+.button:hover {
+  border-color: none !important;
+  color: var(--mainBlue);
+  background-color: var(--lightBlue) !important;
+}
+
+.summery__container {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 1.5rem;
+}
+
+.summery__items {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  background-color: var(--lightBlue);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease-in-out;
+}
+
+.summery__items:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 12px 18px rgba(52, 0, 241, 0.29);
+  transform: translate(0px, -5rem);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+  .payment__container {
+    height: 100vh;
+  }
+
+  .summery__items {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    background-color: var(--lightBlue);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .payment__subtotal {
+    width: 14rem;
+    margin-bottom: 1rem;
+    transition: all 0.5s;
+  }
+
+  .payment__subtotal:hover {
+    box-shadow: 1px 6px 12px rgba(87, 87, 87, 0.4);
+    transform: scale(1.04);
+  }
+
+  .payment__subtotal .MuiTypography-h5 {
+    font-size: 0.7rem;
+  }
+
+  .payment__label {
+    font-size: 0.8rem;
+    width: 85%;
+  }
+  .payment__input {
+    font-size: 0.7rem;
+    width: 85%;
+    padding: 0.3rem;
+    margin: 0.2rem auto;
+  }
+  .button {
+    margin: 0.5rem auto;
+  }
+
+  .payment__alerts > span {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+
+  .MuiTypography-h5 {
+    font-size: 0.8rem !important;
+  }
+
+  .MuiTypography-h4 {
+    font-size: 1rem !important;
+  }
+  .MuiTypography-h6 {
+    font-size: 0.65rem !important;
+  }
+  .MuiTypography-subtitle1 {
+    font-size: 0.5rem !important;
+  }
+
+  .MuiSvgIcon-root {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  .payment__alerts {
+    font-size: 0.7rem;
+    width: 85%;
+    margin-top: -0.18rem;
+    padding: 0.7rem;
+  }
+}
